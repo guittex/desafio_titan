@@ -39,7 +39,7 @@
                             <?php foreach($data['funcionarios'] as $funcionario) : ?>
                                 <tr>
                                     <td><?= $funcionario['nome'] ?></td>
-                                    <td><?= $funcionario['cpf'] ?></td>
+                                    <td><?= aplicarMascaraCPF($funcionario['cpf']) ?></td>
                                     <td><?= $funcionario['rg'] ?></td>
                                     <td><?= $funcionario['email'] ?></td>
                                     <td><?= $funcionario['nome_empresa'] ?></td>
